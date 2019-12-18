@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	<name>Release Date</name>
+	<author>Dylan</author>
+	<version>1.0.0</version>
+	<description>Een Release date module</description>
+	<files>
+		<filename>mod_release.xml</filename>
+		<filename module="mod_release">mod_release.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>css</folder>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+    		<field name="module_kleur" type="color" label="Bericht kleur" default="#2E2E2E"/>
+    	  <field name="text_kleur" type="color" label="Text kleur" default="#FFFFFF"/>
+				<field name="border_kleur" type="color" label="Border kleur" default="#232323"/>
+				<field name="myimage" type="media" directory=""/>
+				<field name="folder" type="text" label="Naam site" default="dylan"/>
+				<field name="imgheight" type="number" label="Hoogte Img in %" default="100"/>
+      	<field name="font" type="number" label="Font size" default="20"/>
+				<field name="release" type="calendar" label="Datum Release" default=""/>
+				<field name="releasetijd" type="text" label="Tijd : 00:00:00" default="12:00:00"/>
+        <field name="text" type="text" label="Tijdens Timer text" default=""/>
+			  <field name="text2" type="text" label="Release text" default=""/>
+			</fieldset>
+		</fields>
+	</config>
+	<!-- <updateserver>
+		<server type="extension" priority="1" name="Takties klantenscore update">
+	            http://update.takties.nl/mod_klant/update.xml
+	  </server>
+	</updateserver> -->
+</extension>
